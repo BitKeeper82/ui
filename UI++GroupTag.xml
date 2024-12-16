@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIpp Title="ANU" Icon="ANULogo.ico" Color="#000000" Flat="True">
+	<Actions>
+		<Action Type="Input" Name="SelectGroupTag" Title="Autopilot GroupTag" ShowBack="False">
+			<InputChoice Variable="UIGroupTag" Sort="False" Question="Please choose a GroupTag for this system" Default="WIN-AP-STAFF" Required="True" AutoComplete="True">
+				<Choice Option="Staff Device	(WIN-AP-STAFF)" Value="WIN-AP-STAFF" />
+				<Choice Option="Xibo Device		(WIN-AP-KIOSK-XB)" Value="WIN-AP-KIOSK-XB" />
+				<Choice Option="ZoomRoom Device	(WIN-AP-KIOSK-ZR)" Value="WIN-AP-KIOSK-ZR" />
+				<Choice Option="Travel Device	(WIN-AP-TRAVEL)" Value="WIN-AP-TRAVEL" />
+				<Choice Option="DISP Device		(WIN-AP-DISP)" Value="WIN-AP-DISP" />
+			</InputChoice>
+		</Action>
+		<Action Type="TSVar" Name="GroupTag">%UIGroupTag%</Action>
+  </Actions>
+</UIpp>
+
+
